@@ -1,5 +1,5 @@
 window.onload = async () => {
-  await fetchData();
+  await fetchDataAndCreate();
 };
 
 const options = {
@@ -10,7 +10,7 @@ const options = {
   },
 };
 
-const fetchData = async () => {
+const fetchDataAndCreate = async () => {
   const response = await fetch(
     "https://striveschool-api.herokuapp.com/api/product/",
     options
@@ -31,10 +31,17 @@ const createProductCard = (list) => {
                  <p class="card-text">${list.description}</p>
 
             <div class="card-buttons">
-    <button class="btn btn-primary add-button">View Details</button>
+    <a href="./details.html?eventId=${list._id}"><button class="btn btn-primary view-details-button">View Details</button></a>
     <p class="card-text">${list.price}$</p>
   </div>
             </div>
           </div>
         </div>`;
 };
+
+// const viewDetailsButtons = document.querySelectorAll(".view-details-buttons");
+// for (let viewDetailsButton of viewDetailsButtons) {
+//     viewDetailsButton.addEventListener("click", () => {
+//         window.location.search =
+//     });
+// }
