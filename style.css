@@ -1,0 +1,22 @@
+body {
+  background-color: bisque;
+}
+
+.navbar {
+  background-color: burlywood;
+}
+
+.jumbotron {
+  background: bisque;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
