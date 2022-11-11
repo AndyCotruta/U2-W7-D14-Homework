@@ -3,7 +3,6 @@ console.log("Product Id is: " + eventId);
 
 window.onload = async () => {
   await fetchData();
-  createProductCard();
 };
 
 const options = {

@@ -9,3 +9,9 @@ body {
 .jumbotron {
   background: bisque;
 }
+
+img {
+  width: 175px;
+  height: 250px;
+  object-fit: cover;
+}
